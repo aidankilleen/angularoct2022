@@ -5,6 +5,16 @@ import { Component } from '@angular/core';
   template: `
     <h1>Angular Hello World</h1>
 
+    <box [width]="50" [height]="50" colour="red">
+    </box>
+    <box [width]="150" [height]="20" colour="green">
+    </box>
+    <box [width]="50" [height]="120" colour="blue">
+    </box>
+
+    <div>Is this a box?</div>
+
+    <!--
     <user-list [users]="users" title="All Users">
     </user-list>
 
@@ -13,7 +23,7 @@ import { Component } from '@angular/core';
     <user-list [users]="activeUsers" title="Active Users"></user-list>
 
     <message *ngFor="let message of messages" [message]="message"></message>
-
+    -->
   `,
   styleUrls: ['./app.component.css']
 })
